@@ -1,0 +1,140 @@
+package com.clownvin.util;
+
+import java.io.File;
+
+public final class MimeTypes {
+    public static String getMimeType(File file) {
+        String fileName = file.getName();
+        String ext = fileName.substring(fileName.lastIndexOf(".") + 1).toLowerCase();
+        switch (ext) {
+            case "aac":
+                return "audio/aac";
+            case "arc":
+                return "application/x-freearc";
+            case "avi":
+                return "video/x-msvideo";
+            case "bin":
+                return "application/octet-stream";
+            case "bmp":
+                return "image/bmp";
+            case "bz":
+                return "application/x-bzip";
+            case "bz2":
+                return "application/x-bzip2";
+            case "doc":
+                return "application/msword";
+            case "docx":
+                return "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
+            case "epub":
+                return "application/epub+zip";
+            case "gz":
+                return "application/gzip";
+            case "gif":
+                return "image/gif";
+            case "ico":
+                return "image/vnd.microsoft.icon";
+            case "jar":
+                return "application/java-archive";
+            case "jpeg":
+            case "jpg":
+                return "image/jpeg";
+            case "mjs":
+            case "js":
+                return "text/javascript";
+            case "json":
+                return "application/json";
+            case "jsonld":
+                return "application/ld+json";
+            case "mid":
+            case "midi":
+                return "audio/midi";
+            case "mp3":
+                return "audio/mpeg";
+            case "mpeg":
+                return "video/mpeg";
+            case "odp":
+                return "application/vnd.oasis.opendocument.presentation";
+            case "ods":
+                return "application/vnd.oasis.opendocument.spreadsheet";
+            case "odt":
+                return "application/vnd.oasis.opendocument.text";
+            case "oga":
+                return "audio/ogg";
+            case "ogv":
+                return "video/ogg";
+            case "ogx":
+                return "application/ogg";
+            case "otf":
+                return "font/otf";
+            case "png":
+                return "image/png";
+            case "pdf":
+                return "application/pdf";
+            case "php":
+                return "application/php";
+            case "ppt":
+                return "application/vnd.ms-powerpoint";
+            case "pptx":
+                return "application/vnd.openxmlformats-officedocument.presentationml.presentation";
+            case "rar":
+                return "application/x-rar-compressed";
+            case "rtf":
+                return "application/rtf";
+            case "sh":
+                return "application/x-sh";
+            case "svg":
+                return "image/svg+xml";
+            case "tar":
+                return "application/x-tar";
+            case "tif":
+            case "tiff":
+                return "image/tiff";
+            case "ts":
+                return "video/mp2t";
+            case "ttf":
+                return "font/ttf";
+            case "wav":
+                return "audio/wav";
+            case "weba":
+                return "audio/webm";
+            case "webm":
+                return "video/webm";
+            case "webp":
+                return "image/webp";
+            case "woff":
+                return "font/woff";
+            case "woff2":
+                return "font/woff2";
+            case "xhtml":
+                return "application/xhtml+xml";
+            case "xls":
+                return "application/vnd.ms-excel";
+            case "xlsx":
+                return "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+            case "xml":
+                return "application/xml";
+            case "xul":
+                return "application/vnd.mozilla.xul+xml";
+            case "zip":
+                return "application/zip";
+            case "3gp":
+                return "video/3gpp";
+            case "3g2":
+                return "video/3gpp2";
+            case "7z":
+                return "application/x-7z-compressed";
+            case "csv":
+                return "text/csv";
+            case "htm":
+            case "html":
+                return "text/html";
+            case "css":
+                return "text/css";
+            case "txt":
+            case "text":
+                return "text/plain";
+            default:
+                return "application/octet-stream";
+        }
+    }
+}
